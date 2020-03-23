@@ -357,13 +357,23 @@ margin: 0;
 padding: 0;
 font-size: 14px;}
 
+.container-contact-coordonnees
+{display:flex;
+flex-flow: row nowrap;
+align-items: baseline;}
+
+
+.container-contact-coordonnees i
+{margin-right: 2%;}
 
 
 /*  DÉBUT DE LA COLONNE 1 ORANGE */
 
 
 .colonne1-orange
-{background-color:#FFCA28;}
+{background-color:#FFCA28;
+display: flex;
+flex-direction: column;}
 
 .block-logo
 {width: 100%;
@@ -435,25 +445,17 @@ text-align: center;
 padding:10px;
 font-weight: bold;}
 
-/* BLOCK CONTACT, DECALAGE DES ICONES */
-.fa-map-marker-alt
-{padding-right: 13px;} 
-.fa-mobile
-{padding-right: 15px;}
-.fa-envelope
-{padding-right: 11px;}
-.fa-linkedin
-{padding-right: 12px;}
-.fa-github
-{padding-right: 12px;}
+/* BLOCK CONTACT  */
+.container-contact
+{padding-left: 7%;}
 
 
 /* BLOCK CONTACT, ESPASSEMENT ENTRE  LES ICONES et LES LIENS */
-.location
-{margin-left: 5%;
-color: #474444;
-font-weight: bold;
-font-size: 1.1em;}
+.sous-titre-contact
+{margin-left: 7%;
+  color: #474444;
+  font-weight: bold;
+  font-size: 1.1em;}
 
 /* ESPACEMENT DES SOUS PARAGRAPHE, LIENS, SITE WEB  */
 .ajust-contact
@@ -469,10 +471,14 @@ text-decoration: none;}
 
 /* AGENCEMENT DU CONTENUE, POUR LE CONTOUR DES MARGES  */
 .apropos
-{margin: 9% 9% 9% 9%;
-text-align: justify;
+{flex-grow: 1;}
+
+.apropos p
+{text-align: justify;
 max-width: 100%;
-font-size: 1.2em;}
+font-size: 1.2em;
+padding: 0 5%;}
+
 
 
                     /*    BLOCK  LOISIRS     */
@@ -722,7 +728,7 @@ flex-flow: column wrap;}
 
 /*  MARGE-INTERIEUR BAS DE A-PROPOS   */
       .apropos
-      {padding-bottom: 520px;}/*  FIN COLONNE ORANGE */
+      {}/*  FIN COLONNE ORANGE */
 
   /*  DÉBUT COLONNE BLANCHE  */
   
