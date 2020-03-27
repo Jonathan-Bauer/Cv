@@ -363,23 +363,25 @@ flex-flow: row nowrap;
 align-items: baseline;}
 
 
-.container-contact-coordonnees i
+.container-contact-coordonnees i 
 {margin-right: 2%;}
 
 
 /*  DÉBUT DE LA COLONNE 1 ORANGE */
 
-
+/* COULEUR ET COMPORTEMENT DE LA COLONNE ORANGE */
 .colonne1-orange
 {background-color:#FFCA28;
 display: flex;
 flex-direction: column;}
 
+/* BLOCK LOGO QUI CONTIENT LE LOGO, TAILLE, ALIGNEMENT */
 .block-logo
 {width: 100%;
 text-align: center;
 padding-top: 50px;}
 
+/* STYLISATION DU LOGO CV TAILLE, CERCLAGE .. */
 #logo
 {width: 200px;
 border: 5px solid #ccb256;;
@@ -436,13 +438,13 @@ color: #5f685c;}
  
 /* MISE EN PAGE DES TITRES H2  CONTACT + A PROPOS + LOISIRS */                
 .titre-aside
-{
-font-size: 1.7em;
+{font-size: 1.7em;
 height: 40px;
 color: #feca07;
 background-color: #404040;   
 text-align: center;
 padding:10px;
+margin-bottom: 15px;
 font-weight: bold;}
 
 /* BLOCK CONTACT  */
@@ -452,10 +454,10 @@ font-weight: bold;}
 
 /* BLOCK CONTACT, ESPASSEMENT ENTRE  LES ICONES et LES LIENS */
 .sous-titre-contact
-{margin-left: 7%;
-  color: #474444;
-  font-weight: bold;
-  font-size: 1.1em;}
+{color: #474444;
+font-weight: bold;
+font-size: 1.1em;
+align-items: baseline;}
 
 /* ESPACEMENT DES SOUS PARAGRAPHE, LIENS, SITE WEB  */
 .ajust-contact
@@ -463,7 +465,7 @@ font-weight: bold;}
 
 /* ANNULATION de la coloration de lien  */
 a, a:hover{
-color: #5c5c5c;
+color: #474444;
 text-decoration: none;}
 
 
@@ -482,9 +484,6 @@ padding: 0 5%;}
 
 
                     /*    BLOCK  LOISIRS     */
-
-/*   PREPARATION DU CONTAINER*/
-
 
 /*   AGENCEMENT DES ICONES DE LOISIRS */
 .icone_loisirs
@@ -549,8 +548,8 @@ border-bottom: 3px solid #feca07;
 /*   ORGANISATION DES PUCES ORANGE DES 3 SECTIONS FORMATION, EXPÉRIENCE-PRO,  RECOMMANDATIONS*/
 .puce-gras
 {margin-top: 5%;
-  margin-left: 4%;
-  font-weight: bold;}
+margin-left: 4%;
+font-weight: bold;}
 
 /*  DÉCALAGE DES PUCES AVEC UN PADDING (MARGE INTÉRIEUR) */
 .space-puce
@@ -581,10 +580,12 @@ text-align: justify}
 margin-right: 9%;
 text-align: justify}
 
-                  /*   FOOTER DU BAS DU CV BLOCK "RECOMMANDATION   */
+ 
+/*   FOOTER DU BAS DU CV BLOCK "RECOMMANDATION   */
 .footer-noir
 {font-weight: bold;}
 
+/* BLOCK RECOMMANDATIONS  */
 .recommandations
 {width: 250px;
 margin-left: 9%;
@@ -595,38 +596,39 @@ flex-flow: column wrap;}
 
 @media screen and (min-width: 301px) {
 
-  .titre-second
-  {visibility: hidden;
-  height: 0;}
+.titre-second
+{visibility: hidden;
+height: 0;}
 
 }
 
 /* max-width pour faibles résolutions */
 @media screen and (min-width: 640px) {
-  #formations, #experiences, #recommandations
-  {margin-left: 5%;}
+
+#formations, #experiences, #recommandations
+{margin-left: 5%;}
 
   /*  CENTRAGE DES SOUS-TITRE , OCCITANIE */
- .space-geo
- {margin-left: 15%; }
+.space-geo
+{margin-left: 15%; }
 
-  .space-puce
-  {padding-right: 5%;}
+.space-puce
+{padding-right: 5%;}
 
-  .puce
-  {width:30%;
-  clear: both;}
+.puce
+{width:30%;
+clear: both;}
 
-  .puce-gras
-  {margin-top: 3%;
-  margin-left: 17%;}
+.puce-gras
+{margin-top: 3%;
+margin-left: 17%;}
 
-  .recommandations
-  {justify-content: flex-start;}
+.recommandations
+{justify-content: flex-start;}
 
-  .titre-second
-  {visibility: hidden;
-  height: 0;}
+.titre-second
+{visibility: hidden;
+height: 0;}
 }
 
 
@@ -638,38 +640,38 @@ flex-flow: column wrap;}
   {font-size: 15px;}
   
   /* BLOCK CONTACT, DECALAGE DES ICONES */
- .fa-map-marker-alt
- {padding-left: 10px;} 
- .fa-mobile
- {padding-left: 10px;}
- .fa-envelope
- {padding-left: 10px;}
- .fa-linkedin
- {padding-left: 10px;}
- .fa-github
- {padding-left: 9px;}
+.fa-map-marker-alt
+{padding-left: 10px;} 
+.fa-mobile
+{padding-left: 10px;}
+.fa-envelope
+{padding-left: 10px;}
+.fa-linkedin
+{padding-left: 10px;}
+.fa-github
+{padding-left: 9px;}
 
-  .titre-second
-  {visibility: hidden;
-  height: 0;}
+.titre-second
+{visibility: hidden;
+height: 0;}
 
-  #formations, #experiences, #recommandations
-  {margin-right: auto;}
+#formations, #experiences, #recommandations
+{margin-right: auto;}
 
   /*  CENTRAGE DES SOUS-TITRE , OCCITANIE */
- .space-geo
- {margin-left: 12%; }
+.space-geo
+{margin-left: 12%; }
 
-  .puce
-  {width:30%;
-  clear: both;}
+.puce
+{width:30%;
+clear: both;}
 
-  .puce-gras
-  {margin-top: 3%;
-  margin-left: 10%;}
+.puce-gras
+{margin-top: 3%;
+margin-left: 10%;}
 
-  .container-informations 
-  {width:70%;}
+.container-informations 
+{width:70%;}
 }
 
 
@@ -679,144 +681,124 @@ flex-flow: column wrap;}
   
 
   /* AGRANDISSEMENT LOGO  */
-  #logo
-   {width: 50%;
-   border: 5px solid #ccb256;;
-   border-radius: 50%;}
+#logo
+{width: 50%;
+border: 5px solid #ccb256;;
+border-radius: 50%;}
     
   /* AGRANDISSEMENT POLICE TITRE H2 COLONNE ORANGE */
-  .titre-aside
-   {font-size: 2.3em;}
+.titre-aside
+{font-size: 2.3em;}
     
   /* SUPPRESSION DU BLOCK HEADER COLONNE ORANGE   */
-  .header-col-orange
-   {height: 0;}
+.header-col-orange
+{height: 0;}
   
   /* TITRE-PRINCIPAL COLORATION "JONATHAN " EN JAUNE*/
-  .yellow 
-   {color: #ffc902}
+.yellow 
+{color: #ffc902}
   
   /* SURLIGEMENT LIGNE JAUNE DU H1 DÉVELOPPER WEB EN FORMATION */
-    .deve_yellow{
-    border-bottom: 3px solid #feca07 }
+.deve_yellow{
+border-bottom: 3px solid #feca07 }
     
-  /* BLOCK CONTACT, DECALAGE DES ICONES */
-.fa-map-marker-alt
-{padding-right: 15px;} 
-.fa-mobile
-{padding-right: 15px;}
-.fa-envelope
-{padding-right: 15px;}
-.fa-linkedin
-{padding-right: 15px;}
-.fa-github
-{padding-right: 15px;}
-
+  
+/* MARGE GAUCHE SUR BLOCK CONTACT  */
 .ajust-contact
 {margin-left: 15%;}
 
   /* SOUS-TITRE (H1)  */
- .titre-second
-     {text-align: left;
-     margin-left: 6%;}
+.titre-second
+{text-align: left;
+margin-left: 6%;}
   
-  .sous-titre
-     {font-size: 1.7rem;
-      margin-left: 7%;
-      margin-top: -2%;
-      opacity: 0.7;}
+.sous-titre
+{font-size: 1.7rem;
+margin-left: 7%;
+margin-top: -2%;
+opacity: 0.7;}
 
-/*  MARGE-INTERIEUR BAS DE A-PROPOS   */
-      .apropos
-      {}/*  FIN COLONNE ORANGE */
-
-  /*  DÉBUT COLONNE BLANCHE  */
+/*  MARGE-INTERIEUR BAS DU BLOCK LOISIRS   */
+.icone_loisirs
+{margin-bottom: 2%;}
   
-  /*  HEADER DE LA COLONNE BLANCHE  MARGE DU HAUT */
-  .header-col-blanche
-  {margin-top: 12%;}
+/*  HEADER DE LA COLONNE BLANCHE  MARGE DU HAUT */
+.header-col-blanche
+{margin-top: 12%;}
 
   /*  TITRE PRINCIPAL (H2) COLONNE BLANCHE  */
-  .titre-principal
-  {
-    margin-top: 6%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    font-size: 2.8em;}
+.titre-principal
+{ margin-top: 6%;
+margin-bottom: 1%;
+margin-left: 1%;
+font-size: 2.8em;}
     
-  .yellow
-  {margin-left: 1%;}
-  .sous-titre
-  {margin-left: 2%}
+.yellow
+{margin-left: 1%;}
 
-  .orange
-  {margin: 0}
-    
-  #formations
-  {margin-top: 18%;
-  margin-left: 4%}
-  
-  #experiences, #recommandations
-  {margin-left: 4%;}
-  .row
-  {display: flex}
-  
-  .colonne2-blanche
-  {width: 70%;}
-  
-  .colonne1-orange
-  {width: 30%;}
-  
-  .titre-premier
-  {visibility: hidden;}
+/* MARGE SUR LE BLOCK H1 */
+.sous-titre
+{margin-left: 2%}
 
-  .titre-second
-  {visibility: visible;}
+/* BLOCK FORMATIONS AVEC AJOUT DE MARGE */
+#formations
+{margin-top: 18%;
+margin-left: 4%}
+ 
+/* BLOCK EXPERIENCES & RECOMMANDATIONS AJOUT DE MARGE */
+#experiences, #recommandations
+{margin-left: 4%;}
+
+/* DECLARATION DE LA ROW EN DISPLAY  */
+.row
+{display: flex}
+  
+
+/* DECLARATION DE LA TAILLE COLONNE ORANGE   */ 
+.colonne1-orange
+{width: 30%;}
+
+/* DECLARATION DE LA TAILLE COLONNE BLANCHE */ 
+.colonne2-blanche
+{width: 70%;}
+ 
+/* BLOCK HEADER AVEC H1 & H2 EN HIDDEN */
+.titre-premier
+{visibility: hidden;}
+
+/* BLOCK HEADER AVEC H1 & SON H2 EN VIVIBLE */
+.titre-second
+{visibility: visible;}
   
   }
   
   
 
 /* max-width pour faibles résolutions */
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     
     
- /* BLOCK CONTACT, DECALAGE DES ICONES */
- .fa-map-marker-alt
-{padding-right: 15px;} 
-.fa-mobile
-{padding-right: 15px;}
-.fa-envelope
-{padding-right: 15px;}
-.fa-linkedin
-{padding-right: 15px;}
-.fa-github
-{padding-right: 15px;}
- 
- .ajust-contact
- {margin-left: 12%;}
+/*  MARGE GAUCHE SUR BLOCK CONTACT  */
+.ajust-contact
+{margin-left: 12%;}
 
     
-    
-
 /* AJOUT MARGE INTERIEUR HAUT  */
-    .contact
-    {padding-top: 5%;}
+.contact
+{padding-top: 5%;}
 
 /* AJOUT MARGE BLOCK EXPERIENCE + RECOMMANDATIONS  */
-    #experiences, #recommandations
-    {padding-top: 5%;}
+#experiences, #recommandations
+{padding-top: 5%;}
  
 /* DECLARATION DE LA LARGEUR DE LA COLONNE BLANCHE 70% */
-    .colonne2-blanche
-    {
-    width: 70%;}
+.colonne2-blanche
+{width: 70%;}
   
  /* DECLARATION DE LA LARGEUR DE LA COLONNE ORANGE 30%  */
-    .colonne1-orange
-    {width: 30%;
-    }
-  }
+.colonne1-orange
+{width: 30%;}
+}
   
 
 
