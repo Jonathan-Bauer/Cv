@@ -357,17 +357,21 @@ margin: 0;
 padding: 0;
 font-size: 14px;}
 
+
+
+
+/*  DÉBUT DE LA COLONNE 1 ORANGE */
+
+
+/* BLOCK CONTACT : FLEX SUR LES ELEMENTS POUR LES ALIGNER  */
 .container-contact-coordonnees
 {display:flex;
 flex-flow: row nowrap;
 align-items: baseline;}
 
-
+/* BLOCK CONTACT MARGE SUR LES ICONES  */
 .container-contact-coordonnees i 
-{margin-right: 2%;}
-
-
-/*  DÉBUT DE LA COLONNE 1 ORANGE */
+{margin-right: 2%;} 
 
 /* COULEUR ET COMPORTEMENT DE LA COLONNE ORANGE */
 .colonne1-orange
@@ -399,12 +403,12 @@ header
 {width: 100%;}
 
 
-/*  CENTRAGE DU TITRE + SOUS-TITRE */
+/*  HEADER-1 -CENTRAGE- DU TITRE H1 + SOUS-TITRE H2 */
 .titre-premier, .titre-second
 {text-align: center;}
 
 
-/* TAILLE POLICE TITRE-PRINCIPAL */
+/* TAILLE POLICE HEADER H1 TITRE-PRINCIPAL */
 .titre-principal
 {font-size: 2em;
 margin-bottom: -2%;}
@@ -447,19 +451,19 @@ padding:10px;
 margin-bottom: 15px;
 font-weight: bold;}
 
-/* BLOCK CONTACT  */
+/* BLOCK CONTACT MARGE INTERIEUR GAUCHE */
 .container-contact
 {padding-left: 7%;}
 
 
-/* BLOCK CONTACT, ESPASSEMENT ENTRE  LES ICONES et LES LIENS */
+/* BLOCK CONTACT, ALIGNEMENT, COULEUR, TAILLE DES ICONES et LES LIENS */
 .sous-titre-contact
 {color: #474444;
 font-weight: bold;
 font-size: 1.1em;
 align-items: baseline;}
 
-/* ESPACEMENT DES SOUS PARAGRAPHE, LIENS, SITE WEB  */
+/* MARGE DES SOUS PARAGRAPHE, LIENS, SITE WEB  */
 .ajust-contact
 {margin-left: 9%;}
 
@@ -486,13 +490,14 @@ padding: 5% 8% 0% 8%;}
 
                     /*    BLOCK  LOISIRS     */
 
-/*   AGENCEMENT DES ICONES DE LOISIRS */
+/*   AGENCEMENT DU BLOCK LOISIRS */
 .icone_loisirs
 {display: flex;
 flex-flow: row nowrap;
 justify-content: center;
 margin-bottom: 1.5%}
 
+/*   AGENCEMENT DES ICONES DANS LOISIRS */
 .ico-loisirs
 {width:60px;
 height: 55px;
@@ -534,7 +539,7 @@ padding-top: 2%;}
 .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt, .fa-dot-circle, .fa-circle
 {color: #ffc902;}
 
-/*  SOUS-LIGNE SOUS LES TITRES H2 DES 3 SECTIONS   */
+/*  SURLIGNEMENT JAUNE SOUS LES TITRES H2 DES 3 SECTIONS   */
 .surline
 {margin-right: 5%;
 margin-bottom: 4%;
@@ -542,7 +547,7 @@ margin-left: 5%;
 border-bottom: 3px solid #feca07;
 }
  
-/*  DECALLAGE DES SOUS-TITRES DE -SOUS LES H- TITRE DES SECTIONS */
+/*  MARGE GAUCHE,DECALLAGE DES SOUS-TITRES DES SECTIONS FORMATION & EXPERIENCE PRO*/
 .decalage
 {margin-left: 9%;}
 
@@ -576,6 +581,7 @@ margin-right: 2%}
 {margin-left: 9%;
 margin-right: 9%;
 text-align: justify}
+
 /* DESCRIPTIONS DES EMPLOIS EFFECTUER */
 .descriptif-emploie
 {margin-left: 9%;
@@ -583,7 +589,7 @@ margin-right: 9%;
 text-align: justify}
 
  
-/*   FOOTER DU BAS DU CV BLOCK "RECOMMANDATION   */
+/*   FOOTER BAS DU CV BLOCK "RECOMMANDATION  EN  IMPORTANT   */
 .footer-noir
 {font-weight: bold;}
 
@@ -617,17 +623,21 @@ height: 0;}
 .space-puce
 {padding-right: 5%;}
 
+/* CONTAINEUR PUCE  */
 .puce
 {width:30%;
 clear: both;}
 
+/* ORGANISATION DES PUCE  */
 .puce-gras
 {margin-top: 5%;
 margin-left: 17%;}
 
+/* BLOCK RECOMMANDATIONS  */
 .recommandations
 {justify-content: flex-start;}
 
+/* HEADER-2 EN INVISIBLE  */
 .titre-second
 {visibility: hidden;
 height: 0;}
@@ -638,10 +648,10 @@ height: 0;}
 /* max-width pour faibles résolutions */
 @media screen and (min-width: 830px) {
   
-  body 
-  {font-size: 15px;}
+body 
+{font-size: 15px;}
   
-  /* BLOCK CONTACT, DECALAGE DES ICONES */
+  /* BLOCK CONTACT, DECALAGE MARGE INTERIEUR DES ICONES */
 .fa-map-marker-alt
 {padding-left: 10px;} 
 .fa-mobile
@@ -653,10 +663,12 @@ height: 0;}
 .fa-github
 {padding-left: 9px;}
 
+/*  HEADER-2 VOYANT */
 .titre-second
 {visibility: hidden;
 height: 0;}
 
+/* MARGE SUR BLOCK #FORMATION, #EXPERIENCE PRO, #RECOMMANDATIONS  */
 #formations, #experiences, #recommandations
 {margin-right: auto;}
 
@@ -664,14 +676,17 @@ height: 0;}
 .space-geo
 {margin-left: 12%; }
 
+/* CONTAINEUR PUCE  */
 .puce
 {width:30%;
 clear: both;}
 
+/* ORGANISATION DES PUCE  */
 .puce-gras
 {margin-top: 5%;
 margin-left: 10%;}
 
+/* DECLARATION ESPACE  DES BLOCK #FORMATIONS & EXPERIENCE PRO  */
 .container-informations 
 {width:70%;}
 }
@@ -709,11 +724,12 @@ border-bottom: 3px solid #feca07 }
 .ajust-contact
 {margin-left: 15%;}
 
-  /* SOUS-TITRE (H1)  */
+  /* HEADER SOUS-TITRE (H2)  */
 .titre-second
 {text-align: left;
 margin-left: 6%;}
-  
+
+/* HEADER TITRE (H1)  */
 .sous-titre
 {font-size: 2rem;
 margin-left: 7%;
@@ -734,7 +750,8 @@ opacity: 0.7;}
 margin-bottom: 1%;
 margin-left: 1%;
 font-size: 3.2em;}
-    
+ 
+/* TITRE-PRINCIPAL COLORATION "JONATHAN " EN JAUNE*/
 .yellow
 {margin-left: 1%;}
 
