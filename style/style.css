@@ -480,11 +480,11 @@ text-decoration: none;}
 .apropos
 {flex-grow: 1;}
 
-.apropos p
+.apropos article
 {text-align: justify;
 max-width: 100%;
 font-size: 1.2em;
-padding: 1% 8% 0% 8%;}
+padding: 5% 8% 0% 8%;}
 
 
 
@@ -512,13 +512,8 @@ text-align: center;
 padding-top: 10px;
 padding-right: 5px;
 padding-left: 5px;
-opacity: 0.5;}
+opacity: 0.5;}/*  FIN DE LA COLONNE 1 ORANGE */
 
-.competences
-{margin: 0;}
-
-.competences-gras
-{font-weight: bold}/*  FIN DE LA COLONNE 1 ORANGE */
 
 
 
@@ -536,13 +531,18 @@ opacity: 0.5;}
                      /*     BLOCK  FORMATION       */
 
 /*  MISE EN FORME DES TITRE H2 POUR LES SECTIONS : FORMATION, EXPERIENCE-PRO et RECOMMANDATIONS */
-article h2 
+section h2 
 {font-size: 1.2em;}
 
 
 /*   COLORATION DES ICONES DES TITRE H2 DES SECTIONS + DES PUCES EN ORANGE */
 .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt, .fa-dot-circle, .fa-circle
 {color: #ffc902;}
+
+/*  DECALLAGE DES ICONES MARGE GAUCHE SUR LES TITRE H2 */
+.fa-graduation-cap, .fa-briefcase, .fa-pencil-alt
+{padding-left: 5%; }
+
 
 /*  SURLIGNEMENT JAUNE SOUS LES TITRES H2 DES 3 SECTIONS   */
 .surline
@@ -572,7 +572,7 @@ font-weight: bold;}
 {margin-left: 6%; }
 
 /* CENTRAGE DU TITRE DE FORMATION, TIRE EXPÉRIENCE PROFESSIONNELLE et RECOMMANCADTIONS */
-article h3
+section h3
 {margin-left: 9%;}
 
 /* CENTRAGE DE L'INTITULÉ DE LA FORMATION OU DU POST OCCUPER */
@@ -778,7 +778,7 @@ margin-left: 4%}
 {display: flex}
     
 /*  MISE EN FORME DES TITRE H2 POUR LES SECTIONS : FORMATION, EXPERIENCE-PRO et RECOMMANDATIONS */
-article h2 
+section h2 
 {font-size: 1.4em;}
   
 
